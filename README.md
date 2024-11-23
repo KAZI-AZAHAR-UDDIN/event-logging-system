@@ -25,22 +25,21 @@ Core Functionality
 🔁 Decentralization Simulation: Multi-server consistency with leader election for fault tolerance.
 📈 Event Visualization: Detect tampering or inconsistencies in the hash chain.
 
+## Technologies Used & Their Purpose
 
-## Technologies Used
-## Technology	Purpose
+| Technology           | Purpose                                |
+|-----------------------|----------------------------------------|
+| Node.js & Express.js | Backend framework for API development  |
+| MongoDB              | Database for scalable and distributed logging |
+| WebSocket (ws)       | Real-time communication with clients   |
+| Joi                  | Data validation for event logs         |
+| Chart.js             | Data visualization on the dashboard    |
+| Crypto (SHA-256)     | Tamper-proof data hashing              |
+| React.js             | Frontend framework for interactive dashboards |
 
-Technology	Purpose
-Node.js & Express.js	Backend framework for API development
-MongoDB	                Database for scalable and distributed logging
-WebSocket (ws)          Real-time communication with clients
-Joi                 	Data validation for event logs
-Chart.js             	Data visualization on the dashboard
-Crypto (SHA-256)        Tamper-proof data hashing
-React.js	            Frontend framework for interactive dashboards
 
 ## Project Setup
-1. git clone https://github.com/your-username/event-logging-system.git
-
+1. git clone git remote add origin https://github.com/KAZI-AZAHAR-UDDIN/event-logging-system.git
 
 
 2. Navigate to the project directory:
