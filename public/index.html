@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Logging Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Event Logging System Dashboard</h1>
+  </header>
+  
+  <main>
+    <section id="event-form">
+      <h2>Add New Event</h2>
+      <form id="add-event-form">
+        <label for="eventType">Event Type:</label>
+        <select id="eventType" required>
+          <option value="INFO">INFO</option>
+          <option value="ERROR">ERROR</option>
+          <option value="DEBUG">DEBUG</option>
+        </select>
+
+        <label for="timestamp">Timestamp:</label>
+        <input type="datetime-local" id="timestamp" required>
+
+        <label for="sourceAppId">Source App ID:</label>
+        <input type="text" id="sourceAppId" required>
+
+        <label for="dataPayload">Data Payload (JSON):</label>
+        <textarea id="dataPayload" rows="4" placeholder='{"key": "value"}' required></textarea>
+
+        <button type="submit">Add Event</button>
+      </form>
+    </section>
+
+    <section id="event-list">
+      <h2>Event Logs</h2>
+      <div id="events-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Event Logging System | © 2024</p>
+  </footer>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
